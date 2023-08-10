@@ -1,7 +1,7 @@
 _id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d5243245109
 type: Request
 parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
-modified: 1691686500767
+modified: 1691687049377
 created: 1691686278230
 url: "{{ base_url }}/api/token/verify"
 name: Verify Token
@@ -11,7 +11,7 @@ body:
   mimeType: application/json
   text: |-
     {
-      "token": "{{ _.VerifyToken }}"
+      "token": "{{ _.RefreshToken }}"
     }
 parameters: []
 headers:

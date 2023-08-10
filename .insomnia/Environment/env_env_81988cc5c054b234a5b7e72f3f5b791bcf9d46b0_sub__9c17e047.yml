@@ -1,7 +1,7 @@
 _id: env_env_81988cc5c054b234a5b7e72f3f5b791bcf9d46b0_sub__9c17e047
 type: Environment
 parentId: env_81988cc5c054b234a5b7e72f3f5b791bcf9d46b0
-modified: 1691686338326
+modified: 1691686983057
 created: 1691686278261
 name: production
 data:
@@ -9,14 +9,12 @@ data:
   base_path: ""
   host: gym-weight-tracker.vercel.app/
   bearerToken: Bearer {% response 'body',
-    'req_wrk_a71816391ffa4279941ce473ac0a93a084a84079',
+    'req_wrk_de7881cc0b4e44d2a3bc3cf402a29d52000897d4',
     'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}
   RefreshToken: "{% response 'body',
-    'req_wrk_a71816391ffa4279941ce473ac0a93a084a84079',
+    'req_wrk_de7881cc0b4e44d2a3bc3cf402a29d52000897d4',
     'b64::JC5yZWZyZXNo::46b', 'never', 60 %}"
-  VerifyToken: "{% response 'body',
-    'req_wrk_a71816391ffa4279941ce473ac0a93a084a84079',
-    'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+  VerifyToken: "{% response 'body', '', '', 'never', 60 %}"
 dataPropertyOrder:
   "&":
     - scheme
