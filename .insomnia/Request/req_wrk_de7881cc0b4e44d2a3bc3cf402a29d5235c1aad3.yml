@@ -1,0 +1,28 @@
+_id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d5235c1aad3
+type: Request
+parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
+modified: 1691686447251
+created: 1691686278243
+url: "{{ base_url }}/api/exercises/{{ exercise_id }}/progressions"
+name: Progressions
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_91d1d62d9f254868be8d30986bc71747
+    name: Authorization
+    value: "{{ _.bearerToken }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1691686278243
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

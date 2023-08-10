@@ -1,0 +1,36 @@
+_id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d52fb349707
+type: Request
+parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
+modified: 1691686417229
+created: 1691686278246
+url: "{{ base_url }}/api/exercises/{{ exercise_id }}"
+name: Update Exercise
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "string"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_4b7e82ba826c4f4597d2a9a68a8f5250
+  - id: pair_84007bc7217649ddb81546085a1ac82b
+    name: Authorization
+    value: "{{ _.bearerToken }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1691686278246
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,30 @@
+_id: env_2db353565af44139810c1dd9e9a5c5de
+type: Environment
+parentId: env_81988cc5c054b234a5b7e72f3f5b791bcf9d46b0
+modified: 1691686365949
+created: 1691686360290
+name: local
+data:
+  scheme: http
+  base_path: ""
+  host: localhost:8000
+  bearerToken: Bearer {% response 'body',
+    'req_wrk_a71816391ffa4279941ce473ac0a93a084a84079',
+    'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}
+  RefreshToken: "{% response 'body',
+    'req_wrk_a71816391ffa4279941ce473ac0a93a084a84079',
+    'b64::JC5yZWZyZXNo::46b', 'never', 60 %}"
+  VerifyToken: "{% response 'body',
+    'req_wrk_a71816391ffa4279941ce473ac0a93a084a84079',
+    'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+dataPropertyOrder:
+  "&":
+    - scheme
+    - base_path
+    - host
+    - bearerToken
+    - RefreshToken
+    - VerifyToken
+color: null
+isPrivate: false
+metaSortKey: 1691686278311

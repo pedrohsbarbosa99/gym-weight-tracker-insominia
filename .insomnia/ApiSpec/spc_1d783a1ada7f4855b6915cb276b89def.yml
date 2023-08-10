@@ -1,0 +1,111 @@
+_id: spc_1d783a1ada7f4855b6915cb276b89def
+type: ApiSpec
+parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
+modified: 1691686278266
+created: 1691686247847
+fileName: gym-weight-tracker-insominia.git
+contents: '{"openapi": "3.0.2", "info": {"title": "Light Weight Baby",
+  "version": "0.0.2", "description": ""}, "paths": {"/api/users/me": {"get":
+  {"operationId": "gym_weight_tracker_api_user_api_me", "summary": "Me",
+  "parameters": [], "responses": {"200": {"description": "OK", "content":
+  {"application/json": {"schema": {"$ref":
+  "#/components/schemas/UserSchema"}}}}}, "tags": ["users"], "security":
+  [{"JWTAuth": []}]}}, "/api/exercises": {"get": {"operationId":
+  "gym_weight_tracker_api_exercise_api_exercises", "summary": "Exercises",
+  "parameters": [], "responses": {"200": {"description": "OK", "content":
+  {"application/json": {"schema": {"title": "Response", "type": "array",
+  "items": {"$ref": "#/components/schemas/ExerciseSchema"}}}}}}, "tags":
+  ["exercises"], "security": [{"JWTAuth": []}]}, "post": {"operationId":
+  "gym_weight_tracker_api_exercise_api_create_exercise", "summary": "Create
+  Exercise", "parameters": [], "responses": {"200": {"description": "OK",
+  "content": {"application/json": {"schema": {"$ref":
+  "#/components/schemas/ExerciseSchema"}}}}}, "tags": ["exercises"],
+  "requestBody": {"content": {"application/json": {"schema": {"$ref":
+  "#/components/schemas/ExerciseInputSchema"}}}, "required": true}, "security":
+  [{"JWTAuth": []}]}}, "/api/exercises/{exercise_id}": {"patch": {"operationId":
+  "gym_weight_tracker_api_exercise_api_update_exercise", "summary": "Update
+  Exercise", "parameters": [{"in": "path", "name": "exercise_id", "schema":
+  {"title": "Exercise Id", "type": "integer"}, "required": true}], "responses":
+  {"200": {"description": "OK"}}, "tags": ["exercises"], "requestBody":
+  {"content": {"application/json": {"schema": {"$ref":
+  "#/components/schemas/ExerciseInputSchema"}}}, "required": true}, "security":
+  [{"JWTAuth": []}]}, "delete": {"operationId":
+  "gym_weight_tracker_api_exercise_api_delete_exercise", "summary": "Delete
+  Exercise", "parameters": [{"in": "path", "name": "exercise_id", "schema":
+  {"title": "Exercise Id", "type": "integer"}, "required": true}], "responses":
+  {"200": {"description": "OK", "content": {"application/json": {"schema":
+  {"$ref": "#/components/schemas/ExerciseSchema"}}}}}, "tags": ["exercises"],
+  "security": [{"JWTAuth": []}]}}, "/api/exercises/{exercise_id}/progressions":
+  {"get": {"operationId": "gym_weight_tracker_api_progression_api_progressions",
+  "summary": "Progressions", "parameters": [{"in": "path", "name":
+  "exercise_id", "schema": {"title": "Exercise Id", "type": "integer"},
+  "required": true}], "responses": {"200": {"description": "OK", "content":
+  {"application/json": {"schema": {"title": "Response", "type": "array",
+  "items": {"$ref": "#/components/schemas/ProgressionSchema"}}}}}}, "tags":
+  ["progressions"], "security": [{"JWTAuth": []}]}}, "/api/progressions":
+  {"post": {"operationId":
+  "gym_weight_tracker_api_progression_api_progression_create", "summary":
+  "Progression Create", "parameters": [], "responses": {"200": {"description":
+  "OK", "content": {"application/json": {"schema": {"$ref":
+  "#/components/schemas/ProgressionSchema"}}}}}, "tags": ["progressions"],
+  "requestBody": {"content": {"application/json": {"schema": {"$ref":
+  "#/components/schemas/ProgressionInputSchema"}}}, "required": true},
+  "security": [{"JWTAuth": []}]}}, "/api/foods/taco": {"get": {"operationId":
+  "gym_weight_tracker_api_food_api_taco", "summary": "Taco", "parameters": [],
+  "responses": {"200": {"description": "OK"}}, "tags": ["foods"], "security":
+  [{"JWTAuth": []}]}}, "/api/token/pair": {"post": {"operationId":
+  "8804db3d_controller_obtain_token", "summary": "Obtain Token", "parameters":
+  [], "responses": {"200": {"description": "OK", "content": {"application/json":
+  {"schema": {"$ref": "#/components/schemas/TokenObtainPairOutputSchema"}}}}},
+  "tags": ["token"], "requestBody": {"content": {"application/json": {"schema":
+  {"$ref": "#/components/schemas/TokenObtainPairInputSchema"}}}, "required":
+  true}}}, "/api/token/refresh": {"post": {"operationId":
+  "a14d75da_controller_refresh_token", "summary": "Refresh Token", "parameters":
+  [], "responses": {"200": {"description": "OK", "content": {"application/json":
+  {"schema": {"$ref": "#/components/schemas/TokenRefreshOutputSchema"}}}}},
+  "tags": ["token"], "requestBody": {"content": {"application/json": {"schema":
+  {"$ref": "#/components/schemas/TokenRefreshInputSchema"}}}, "required": true},
+  "security": [{"JWTAuth": []}]}}, "/api/token/verify": {"post": {"operationId":
+  "97c9f30e_controller_verify_token", "summary": "Verify Token", "parameters":
+  [], "responses": {"200": {"description": "OK", "content": {"application/json":
+  {"schema": {"$ref": "#/components/schemas/Schema"}}}}}, "tags": ["token"],
+  "requestBody": {"content": {"application/json": {"schema": {"$ref":
+  "#/components/schemas/TokenVerifyInputSchema"}}}, "required": true},
+  "security": [{"JWTAuth": []}]}}}, "components": {"schemas": {"UserSchema":
+  {"title": "UserSchema", "type": "object", "properties": {"username": {"title":
+  "Username", "type": "string"}, "email": {"title": "Email", "type": "string"},
+  "first_name": {"title": "First Name", "type": "string"}, "last_name":
+  {"title": "Last Name", "type": "string"}}, "required": ["username"]},
+  "ExerciseSchema": {"title": "ExerciseSchema", "type": "object", "properties":
+  {"id": {"title": "Id", "type": "integer"}, "name": {"title": "Name", "type":
+  "string"}}, "required": ["id", "name"]}, "ExerciseInputSchema": {"title":
+  "ExerciseInputSchema", "type": "object", "properties": {"name": {"title":
+  "Name", "type": "string"}}, "required": ["name"]}, "ProgressionSchema":
+  {"title": "ProgressionSchema", "type": "object", "properties": {"id":
+  {"title": "Id", "type": "integer"}, "exercise_name": {"title": "Exercise
+  Name", "type": "string"}, "weight": {"title": "Weight", "type": "integer"},
+  "created_at": {"title": "Created At", "type": "string", "format": "date"}},
+  "required": ["weight"]}, "ProgressionInputSchema": {"title":
+  "ProgressionInputSchema", "type": "object", "properties": {"exercise_id":
+  {"title": "Exercise Id", "type": "integer"}, "weight": {"title": "Weight",
+  "type": "integer"}}, "required": ["exercise_id", "weight"]},
+  "TokenObtainPairOutputSchema": {"title": "TokenObtainPairOutputSchema",
+  "type": "object", "properties": {"email": {"title": "Endere\u00e7o De Email",
+  "maxLength": 255, "type": "string"}, "refresh": {"title": "Refresh", "type":
+  "string"}, "access": {"title": "Access", "type": "string"}}, "required":
+  ["email", "refresh", "access"]}, "TokenObtainPairInputSchema": {"title":
+  "TokenObtainPairInputSchema", "type": "object", "properties": {"password":
+  {"title": "Senha", "maxLength": 128, "type": "string"}, "email": {"title":
+  "Endere\u00e7o De Email", "maxLength": 255, "type": "string"}}, "required":
+  ["password", "email"]}, "TokenRefreshOutputSchema": {"title":
+  "TokenRefreshOutputSchema", "type": "object", "properties": {"refresh":
+  {"title": "Refresh", "type": "string"}, "access": {"title": "Access", "type":
+  "string"}}, "required": ["refresh"]}, "TokenRefreshInputSchema": {"title":
+  "TokenRefreshInputSchema", "type": "object", "properties": {"refresh":
+  {"title": "Refresh", "type": "string"}}, "required": ["refresh"]}, "Schema":
+  {"title": "Schema", "type": "object", "properties": {}},
+  "TokenVerifyInputSchema": {"title": "TokenVerifyInputSchema", "type":
+  "object", "properties": {"token": {"title": "Token", "type": "string"}},
+  "required": ["token"]}}, "securitySchemes": {"JWTAuth": {"type": "http",
+  "scheme": "bearer"}}}, "servers": null}'
+contentType: yaml

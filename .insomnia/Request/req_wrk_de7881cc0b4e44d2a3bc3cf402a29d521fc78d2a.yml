@@ -1,0 +1,28 @@
+_id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d521fc78d2a
+type: Request
+parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
+modified: 1691686460749
+created: 1691686278239
+url: "{{ base_url }}/api/foods/taco"
+name: Taco
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_a272926260114908ba8b802fab41b7ae
+    name: Authorization
+    value: "{{ _.bearerToken }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1691686278239
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,28 @@
+_id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d5221f09872
+type: Request
+parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
+modified: 1691686377733
+created: 1691686278259
+url: "{{ base_url }}/api/users/me"
+name: Me
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_1ca4b3561ec044cda7a4eba1d277d39a
+    name: Authorization
+    value: "{{ _.bearerToken }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1691686278259
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

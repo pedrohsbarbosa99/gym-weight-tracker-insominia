@@ -1,0 +1,36 @@
+_id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d52bc2d9b67
+type: Request
+parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
+modified: 1691686398415
+created: 1691686278253
+url: "{{ base_url }}/api/exercises"
+name: Create Exercise
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "name": "string"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_65062c47854c40e686d2e1058595acc4
+  - id: pair_ba2d0465deb94464a6297f54be2849b0
+    name: Authorization
+    value: "{{ _.bearerToken }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1691686278253
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

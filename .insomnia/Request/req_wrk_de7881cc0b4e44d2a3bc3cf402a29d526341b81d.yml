@@ -1,0 +1,28 @@
+_id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d526341b81d
+type: Request
+parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
+modified: 1691686439843
+created: 1691686278244
+url: "{{ base_url }}/api/exercises/{{ exercise_id }}"
+name: Delete Exercise
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - id: pair_c86478d9f8c3423fbf32b7500a892b06
+    name: Authorization
+    value: "{{ _.bearerToken }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1691686278244
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

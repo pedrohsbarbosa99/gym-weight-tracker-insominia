@@ -1,0 +1,36 @@
+_id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d52dd0b1f18
+type: Request
+parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
+modified: 1691686495504
+created: 1691686278235
+url: "{{ base_url }}/api/token/refresh"
+name: Refresh Token
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "refresh": "{{ _.RefreshToken }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_01d68150c41041c8b10a55aa610f5527
+  - id: pair_3d62e1ccbc5f4838a906767905920edd
+    name: Authorization
+    value: "{{ _.bearerToken }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1691686278235
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

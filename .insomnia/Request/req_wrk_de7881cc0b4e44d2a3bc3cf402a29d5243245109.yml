@@ -1,0 +1,36 @@
+_id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d5243245109
+type: Request
+parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
+modified: 1691686500767
+created: 1691686278230
+url: "{{ base_url }}/api/token/verify"
+name: Verify Token
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "token": "{{ _.VerifyToken }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_76b947c49fc343428dfa30c88ff5ab30
+  - id: pair_5808386f1fa34c86a767c79a56a89c01
+    name: Authorization
+    value: "{{ _.bearerToken }}"
+    description: ""
+authentication:
+  type: bearer
+  token: "{{bearerToken}}"
+  prefix: ""
+metaSortKey: -1691686278230
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
