@@ -1,7 +1,7 @@
 _id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d52000897d4
 type: Request
 parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
-modified: 1691686557319
+modified: 1691699652314
 created: 1691686278237
 url: "{{ base_url }}/api/token/pair"
 name: Obtain Token
@@ -11,8 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-      "password": "123",
-      "email": "pedro@gmail.com"
+      "password": "",
+      "email": ""
     }
 parameters: []
 headers:
