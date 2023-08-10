@@ -1,7 +1,7 @@
 _id: req_6c4e60234f0c43a9800f8095a482a328
 type: Request
-parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
-modified: 1691695567058
+parentId: fld_25145354a3bf423389a40c7d786d5784
+modified: 1691699782057
 created: 1691695534932
 url: "{{ base_url }}/api/last-progressions"
 name: Last Progressions
@@ -18,7 +18,7 @@ authentication:
   type: bearer
   token: "{{bearerToken}}"
   prefix: ""
-metaSortKey: -1691686278241.5
+metaSortKey: -1691686278218
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,10 +1,10 @@
 _id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d5235c1aad3
 type: Request
-parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
-modified: 1691691371231
+parentId: fld_25145354a3bf423389a40c7d786d5784
+modified: 1691699768260
 created: 1691686278243
 url: "{{ base_url }}/api/exercises/{ exercise_id }/progressions"
-name: Progressions
+name: Exercise Progressions
 description: ""
 method: GET
 body: {}

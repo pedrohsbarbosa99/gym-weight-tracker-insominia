@@ -1,7 +1,7 @@
 _id: req_537620a06a3b4403bfea0136ebb55930
 type: Request
-parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
-modified: 1691695520292
+parentId: fld_25145354a3bf423389a40c7d786d5784
+modified: 1691699774900
 created: 1691691381941
 url: "{{ base_url }}/api/progessions"
 name: progressions
@@ -18,7 +18,7 @@ authentication:
   type: bearer
   token: "{{bearerToken}}"
   prefix: ""
-metaSortKey: -1691686278242
+metaSortKey: -1691686278193
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

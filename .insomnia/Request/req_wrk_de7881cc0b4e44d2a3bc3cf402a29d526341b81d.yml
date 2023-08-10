@@ -1,7 +1,7 @@
 _id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d526341b81d
 type: Request
-parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
-modified: 1691687125657
+parentId: fld_a291f72b4b9148218f7089bc89364c93
+modified: 1691699733274
 created: 1691686278244
 url: "{{ base_url }}/api/exercises/{ exercise_id }"
 name: Delete Exercise
@@ -18,7 +18,7 @@ authentication:
   type: bearer
   token: "{{bearerToken}}"
   prefix: ""
-metaSortKey: -1691686278244
+metaSortKey: -1691698850007.125
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
