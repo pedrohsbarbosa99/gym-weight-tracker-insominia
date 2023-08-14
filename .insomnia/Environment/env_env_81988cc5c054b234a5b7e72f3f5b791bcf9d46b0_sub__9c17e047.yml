@@ -1,17 +1,15 @@
 _id: env_env_81988cc5c054b234a5b7e72f3f5b791bcf9d46b0_sub__9c17e047
 type: Environment
 parentId: env_81988cc5c054b234a5b7e72f3f5b791bcf9d46b0
-modified: 1692023646404
+modified: 1692023977131
 created: 1691686278261
 name: production
 data:
   scheme: https
-  base_path: /api
   host: gym-weight-tracker.vercel.app
 dataPropertyOrder:
   "&":
     - scheme
-    - base_path
     - host
 color: null
 isPrivate: false

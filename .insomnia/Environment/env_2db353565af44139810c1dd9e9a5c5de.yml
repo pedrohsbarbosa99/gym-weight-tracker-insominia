@@ -1,17 +1,15 @@
 _id: env_2db353565af44139810c1dd9e9a5c5de
 type: Environment
 parentId: env_81988cc5c054b234a5b7e72f3f5b791bcf9d46b0
-modified: 1692023650640
+modified: 1692023986056
 created: 1691686360290
 name: local
 data:
   scheme: http
-  base_path: /api
   host: localhost:8000
 dataPropertyOrder:
   "&":
     - scheme
-    - base_path
     - host
 color: null
 isPrivate: false
