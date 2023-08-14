@@ -1,9 +1,9 @@
 _id: req_6c4e60234f0c43a9800f8095a482a328
 type: Request
 parentId: fld_25145354a3bf423389a40c7d786d5784
-modified: 1691699782057
+modified: 1692023683252
 created: 1691695534932
-url: "{{ base_url }}/api/last-progressions"
+url: "{{ base_url }}/last-progressions"
 name: Last Progressions
 description: ""
 method: GET

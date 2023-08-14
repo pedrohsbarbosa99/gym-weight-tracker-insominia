@@ -1,9 +1,9 @@
 _id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d52bc2d9b67
 type: Request
 parentId: fld_a291f72b4b9148218f7089bc89364c93
-modified: 1691699725371
+modified: 1692023632548
 created: 1691686278253
-url: "{{ base_url }}/api/exercises"
+url: "{{ base_url }}/exercises"
 name: Create Exercise
 description: ""
 method: POST
@@ -11,7 +11,7 @@ body:
   mimeType: application/json
   text: |-
     {
-      "name": "string"
+      "name": "Elevação lateral"
     }
 parameters: []
 headers:

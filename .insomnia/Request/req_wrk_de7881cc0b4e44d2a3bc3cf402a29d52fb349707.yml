@@ -1,9 +1,9 @@
 _id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d52fb349707
 type: Request
 parentId: fld_a291f72b4b9148218f7089bc89364c93
-modified: 1691699730886
+modified: 1692023664973
 created: 1691686278246
-url: "{{ base_url }}/api/exercises/{exercise_id }"
+url: "{{ base_url }}/exercises/{exercise_id }"
 name: Update Exercise
 description: ""
 method: PATCH

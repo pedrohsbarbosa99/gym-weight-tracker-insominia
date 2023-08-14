@@ -1,9 +1,9 @@
 _id: req_537620a06a3b4403bfea0136ebb55930
 type: Request
 parentId: fld_25145354a3bf423389a40c7d786d5784
-modified: 1691699774900
+modified: 1692023693088
 created: 1691691381941
-url: "{{ base_url }}/api/progessions"
+url: "{{ base_url }}/progessions"
 name: progressions
 description: ""
 method: GET

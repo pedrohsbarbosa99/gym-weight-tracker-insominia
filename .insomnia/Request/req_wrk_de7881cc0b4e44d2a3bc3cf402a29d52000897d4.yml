@@ -1,9 +1,9 @@
 _id: req_wrk_de7881cc0b4e44d2a3bc3cf402a29d52000897d4
 type: Request
-parentId: wrk_de7881cc0b4e44d2a3bc3cf402a29d52
-modified: 1691699652314
+parentId: fld_b0edc6ce8e6c4195872a9ea5d080b00c
+modified: 1692023714012
 created: 1691686278237
-url: "{{ base_url }}/api/token/pair"
+url: "{{ base_url }}/token/pair"
 name: Obtain Token
 description: ""
 method: POST
